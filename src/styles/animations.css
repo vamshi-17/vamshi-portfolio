@@ -1,0 +1,93 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   KEYFRAMES
+───────────────────────────────────────────────────────────────────────────── */
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, 50px) scale(1.1);
+  }
+}
+
+@keyframes float-slow-delay {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50px, -30px) scale(1.1);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.05);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.7);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   UTILITY CLASSES
+───────────────────────────────────────────────────────────────────────────── */
+
+.animate-gradient-shift {
+  animation: gradient-shift 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-slow-delay {
+  animation: float-slow-delay 25s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 18s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}

@@ -3,7 +3,13 @@ import { GA_TRACKING_ID } from "../../config/seo.config";
 
 const GoogleAnalytics = () => {
   useEffect(() => {
-    if (!GA_TRACKING_ID || GA_TRACKING_ID.startsWith('G-')) return;
+    console.info("Initializing Google Analytics...");
+    if (!GA_TRACKING_ID || GA_TRACKING_ID.startsWith('G-')) {
+      console.warn("Google Analytics tracking ID is not set or invalid.");
+      return;
+    }
+
+    console.info(`Loading Google Analytics with ID: ${GA_TRACKING_ID}`);
 
     // Load GA script
     const script1 = document.createElement('script');
@@ -17,6 +23,7 @@ const GoogleAnalytics = () => {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', '${GA_TRACKING_ID}');
+      console.info("Google Analytics initialized with ID: ${GA_TRACKING_ID}");
     `;
     document.head.appendChild(script2);
   }, []);

@@ -13,7 +13,7 @@ export const CONFIG = {
     email: 'vamshi.durganala2000@gmail.com',
     resumeUrl: '/resume.pdf', // TODO: Update with your actual resume file path
     social: {
-      github: 'https://github.com/vamshi-krishna-durganala', // TODO: UPDATE THIS
+      github: 'https://github.com/vamshi-17',
       linkedin: 'https://linkedin.com/in/vamshi-krishna-durganala/'
     }
   },

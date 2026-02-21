@@ -8,17 +8,17 @@ export const SEO_CONFIG = {
   keywords:
     "Full Stack Developer, React, Spring Boot, AWS, DevOps, TypeScript, Node.js, Kubernetes, Docker, Software Engineer",
   author: "Vamshi Krishna Durganala",
-  url: "https://your-domain.com", // TODO: Update with your actual domain
-  image: "https://your-domain.com/og-image.jpg", // TODO: Update with your OG image
-  twitterHandle: "@yourusername", // TODO: Update with your Twitter handle
+  url: "https://vamshi-17.github.io/vamshi-portfolio", // TODO: Update with your actual domain
+  image: "https://vamshi-17.github.io/vamshi-portfolio/og-image.jpg", // TODO: Update with your OG image
+  twitterHandle: "@vamshi_17", // TODO: Update with your Twitter handle
 };
 
-// Google Analytics ID - Add your tracking ID here
-export const GA_TRACKING_ID = "G-XXXXXXXXXX"; // TODO: Replace with your actual GA4 ID
+// Google Analytics ID
+export const GA_TRACKING_ID = "G-CSC26DCGT1";
 
-// EmailJS Configuration - Sign up at emailjs.com and add your credentials
+// EmailJS Configuration
 export const EMAILJS_CONFIG = {
-  serviceId: "YOUR_SERVICE_ID", // TODO: Replace with your EmailJS service ID
-  templateId: "YOUR_TEMPLATE_ID", // TODO: Replace with your EmailJS template ID
-  publicKey: "YOUR_PUBLIC_KEY", // TODO: Replace with your EmailJS public key
+  serviceId: "service_csiow6a",
+  templateId: "template_n2nvgl8",
+  publicKey: "ti1KPKinidLwn7am7",
 };

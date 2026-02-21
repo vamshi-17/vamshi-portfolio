@@ -3,7 +3,7 @@ import { GA_TRACKING_ID } from "../../config/seo.config";
 
 const GoogleAnalytics = () => {
   useEffect(() => {
-    if (!GA_TRACKING_ID || GA_TRACKING_ID === 'G-XXXXXXXXXX') return;
+    if (!GA_TRACKING_ID || GA_TRACKING_ID.startsWith('G-')) return;
 
     // Load GA script
     const script1 = document.createElement('script');

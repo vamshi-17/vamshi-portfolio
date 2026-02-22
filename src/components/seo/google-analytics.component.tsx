@@ -4,7 +4,7 @@ import { GA_TRACKING_ID } from "../../config/seo.config";
 const GoogleAnalytics = () => {
   useEffect(() => {
     console.info("Initializing Google Analytics...");
-    if (!GA_TRACKING_ID || GA_TRACKING_ID.startsWith('G-')) {
+    if (!GA_TRACKING_ID || GA_TRACKING_ID.length < 10) {
       console.warn("Google Analytics tracking ID is not set or invalid.");
       return;
     }
